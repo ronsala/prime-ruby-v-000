@@ -1,6 +1,10 @@
 require 'benchmark'
 
-puts Benchmark.measure
+Benchmark.bmbm(7) do |bm|
+  bm.report('prime?') do
+    prime?()
+  end
+end
 
 def prime?(num)
   return false if num <= 1
@@ -12,12 +16,12 @@ def prime?(num)
   end
 end
 
-def prime?(num)
+def prime2?(num)
   return false if num <= 1
   (2...num).none? { |i| num % i == 0 } ? true : false
 end
 
-def prime?(num)
+def prime3?(num)
   return false if num <= 1
   (2...num).any? { |i| num % i == 0 } ? false : true
 end
