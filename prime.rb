@@ -1,3 +1,5 @@
+require 'benchmark'
+
 def prime?(num)
   return false if num <= 1
   ary = (2...num).to_a
