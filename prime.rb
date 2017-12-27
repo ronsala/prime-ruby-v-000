@@ -1,7 +1,7 @@
 require 'benchmark'
 
 Benchmark.bm(10) do |x|
-  x.report('prime?:')         { prime?(35) }
+  x.report('p:')   { prime?(35) }
   x.report('prime2?:')  { prime2?(35) }
   x.report('prime3?:')  { prime3?(35) }
 end
