@@ -27,5 +27,6 @@
 def prime?(num)
   if num <= 1
     false
+  end
   (2...num).none? { |i| num % i == 0 } ? true : false
 end
