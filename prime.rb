@@ -17,6 +17,3 @@ def prime?(num)
   return false if num <= 1
   (2...num).any? { |i| num % i == 0 } ? false : true
 end
-
-def prime?()
-end
