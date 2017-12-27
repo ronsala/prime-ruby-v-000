@@ -23,7 +23,7 @@ end
 #   return false if num <= 1
 #   (2...num).none? { |i| num % i == 0 } ? true : false
 # end
-# 
+#
 # def prime?(num)
 #   return false if num <= 1
 #   (2...num).any? { |i| num % i == 0 } ? false : true
