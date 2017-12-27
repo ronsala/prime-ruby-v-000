@@ -26,5 +26,5 @@
 
 def prime?(num)
   (2...num).none? { |i| num % i == 0 } ? true : false
-  num <= 1 ? (return false) : #(return true)
+  num <= 1 ? (return false) #: #(return true)
 end
