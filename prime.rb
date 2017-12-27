@@ -1,10 +1,10 @@
 require 'benchmark'
 
-# Benchmark.bmbm(7) do |bm|
-#   bm.report('prime?') do
-#     prime?()
-#   end
-# end
+Benchmark.bm(10) do |x|
+  x.report('prime?:')         { prime?(35) }
+  x.report('prime2?:')  { prime2?(35) }
+  x.report('prime3?:')  { prime3?(35) }
+end
 
 def prime?(num)
   return false if num <= 1
