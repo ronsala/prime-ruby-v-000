@@ -1,13 +1,13 @@
-def prime?(num)
-  return false if num <= 1
-  for i in (2...num) do
-    if num % i == 0
-      false
-    else
-      true
-    end
-  end
-end
+# def prime?(num)
+#   return false if num <= 1
+#   for i in (2...num) do
+#     if num % i == 0
+#       false
+#     else
+#       true
+#     end
+#   end
+# end
 
 # def prime?(num)
 #   return false if num <= 1
@@ -23,3 +23,9 @@ end
 #   return false if num <= 1
 #   (2...num).none? { |i| num % i == 0 } ? true : false
 # end
+
+def prime?(num)
+  if num <= 1
+    false
+  (2...num).none? { |i| num % i == 0 } ? true : false
+end
