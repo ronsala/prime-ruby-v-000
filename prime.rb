@@ -1,10 +1,10 @@
 require 'benchmark'
 
-Benchmark.bmbm(7) do |bm|
-  bm.report('prime?') do
-    prime?()
-  end
-end
+# Benchmark.bmbm(7) do |bm|
+#   bm.report('prime?') do
+#     prime?()
+#   end
+# end
 
 def prime?(num)
   return false if num <= 1
