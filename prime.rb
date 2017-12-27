@@ -20,7 +20,7 @@ def prime3?(num)
   (2...num).any? { |i| num % i == 0 } ? false : true
 end
 
-Benchmark.bm(10) do |x|
+Benchmark.bmbm(10) do |x|
   x.report('prime?:')   { prime?(1_000_000) }
   x.report('prime2?:')  { prime2?(1_000_000) }
   x.report('prime3?:')  { prime3?(1_000_000) }
