@@ -21,7 +21,7 @@ def prime3?(num)
 end
 
 Benchmark.bm(10) do |x|
-  x.report('p:')   { prime?(35) }
+  x.report('prime?:')   { prime?(35) }
   x.report('prime2?:')  { prime2?(35) }
   x.report('prime3?:')  { prime3?(35) }
 end
